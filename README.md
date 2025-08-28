@@ -19,3 +19,27 @@ npm -w libs/shared test
 cd services/api
 pip install -r requirements.txt
 pytest
+```
+
+## 🤝 Contributing
+
+We welcome contributions to this benchmark project! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details on how to submit pull requests, report issues, and contribute to the codebase.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🔒 Security
+
+If you discover a security vulnerability, please follow our [Security Policy](SECURITY.md) for responsible disclosure.
+
+## 📝 Code of Conduct
+
+This project adheres to the Contributor Covenant [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
+
+## 📞 Support
+
+If you have questions or need help:
+- Open an issue on GitHub
+- Check our [Contributing Guidelines](CONTRIBUTING.md)
+- Review our [Code of Conduct](CODE_OF_CONDUCT.md)
