@@ -1,0 +1,71 @@
+name: Question/Support
+description: Ask a question about using the benchmark
+title: "[Question]: "
+labels: ["question", "help wanted"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your question about the AsynchronousAgent Jules benchmark!
+        
+        Before asking, please check:
+        - [README.md](../README.md) for basic setup instructions
+        - [Contributing Guidelines](../CONTRIBUTING.md) for development info
+        - [Existing issues](../../issues) to see if your question was already answered
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Question Category
+      description: What type of question is this?
+      options:
+        - Setup/Installation
+        - Running tests
+        - Understanding benchmark results
+        - Extending the benchmark
+        - Contributing to the project
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your Question
+      description: What would you like to know?
+      placeholder: Please be as specific as possible...
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What are you trying to accomplish? Any relevant background?
+      placeholder: I'm trying to... because...
+
+  - type: textarea
+    id: attempted
+    attributes:
+      label: What have you tried?
+      description: Any solutions you've already attempted
+      placeholder: I tried... but...
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment (if relevant)
+      description: Your setup details
+      placeholder: |
+        - OS: [e.g. macOS 13.0, Ubuntu 20.04]
+        - Node.js version: [e.g. 18.0.0]
+        - Python version: [e.g. 3.9.0]
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our Code of Conduct
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true

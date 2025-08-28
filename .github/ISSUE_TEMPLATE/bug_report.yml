@@ -1,0 +1,68 @@
+name: Bug Report
+description: File a bug report to help us improve the benchmark
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report for the AsynchronousAgent Jules benchmark!
+
+  - type: input
+    id: component
+    attributes:
+      label: Component
+      description: Which part of the benchmark is affected?
+      placeholder: e.g., web app, shared library, API service, tests
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the bug and what you expected to happen
+      placeholder: Tell us what you see!
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce this issue?
+      placeholder: |
+        1. Run command '...'
+        2. Navigate to '...'
+        3. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: What environment are you running in?
+      placeholder: |
+        - OS: [e.g. macOS 13.0, Ubuntu 20.04]
+        - Node.js version: [e.g. 18.0.0]
+        - Python version: [e.g. 3.9.0]
+        - Browser (if applicable): [e.g. Chrome 91.0]
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs/output
+      description: Please copy and paste any relevant log output
+      render: shell
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our Code of Conduct
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
